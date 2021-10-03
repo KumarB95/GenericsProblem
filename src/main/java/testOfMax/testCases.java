@@ -25,4 +25,14 @@ public class testCases {
         }
         System.out.println("Max number is : "+max);
     }
+
+    public void findMaxString(String[] stringArray) {
+        String max=stringArray[0];
+        for (int i=1;i<stringArray.length;i++){
+            if (stringArray[i].compareTo(max)>0){
+                max=stringArray[i];
+            }
+        }
+        System.out.println("Max String is : "+max);
+    }
 }
