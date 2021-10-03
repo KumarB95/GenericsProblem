@@ -1,26 +1,13 @@
 package com.bridgelabz;
-
-import java.util.Scanner;
+import testOfMax.testCases;
 
 public class MaxOfThree {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Three Numbers : ");
-        Integer a=sc.nextInt();
-        Integer b=sc.nextInt();
-        Integer c=sc.nextInt();
+        testCases testCases=new testCases();
+        Integer[] intArray={15,12,13};
+        Float[] floatArray={12.5f,25.35f,50.25f};
 
-        findMaxInThree(a,b,c);
-    }
-
-    private static void findMaxInThree(Integer a, Integer b, Integer c) {
-        int max=a;
-        if (b.compareTo(a)>0){
-            max=b;
-        }
-        if (c.compareTo(max)>0){
-            max=c;
-        }
-        System.out.println("Maximum in Three is : "+max);
+        testCases.findMaxInThree(intArray);
+        testCases.findMaxFloat(floatArray);
     }
 }
